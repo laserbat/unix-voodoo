@@ -1,7 +1,7 @@
 #!/bin/sed -Ef
 :a
     s/^([^0b][^b]*)([^0b])(0*)b?/\1\30b\2\3b/;
-t a;
+ta;
 
 s/^0+b//;
 
@@ -17,9 +17,10 @@ s/9/aaaaaaaaa/g;
 
 :b
     s/(a+)0/\1\1\1\1\1\1\1\1\1\1/g;
-t b;
+tb;
 
 s/b//g;
 
 s/^(0|a)$/false/;
-s/^(aa+)\1+$/false/;s/^a+$/true/
+s/^(aa+)\1+$/false/;
+s/^a+$/true/
