@@ -5,6 +5,7 @@ s/ /z/g;
     s/(^|z)([^0bz][^bz]*)([^0bz])(0*)b?/\1\2\40b\3\4b/;
 ta;
 
+
 s/1/a/g;
 s/2/aa/g;
 s/3/aaa/g;
@@ -37,6 +38,12 @@ s/^/z/;
 :e
     s/z(a+)\1\1\1\1\1\1\1\1\1(a*)(q|z|$)/z\1q\2\3/;
 te;
+
+:f
+    s/qq/q0q/g;
+tf;
+
+s/q($|z)/q0\1/g;
 
 s/aaaaaaaaa/9/g;
 s/aaaaaaaa/8/g;
