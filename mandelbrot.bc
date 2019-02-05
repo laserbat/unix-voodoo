@@ -1,0 +1,22 @@
+#!/usr/bin/bc
+scale=16;
+
+for (i=-2.5;i<1;i+=0.1){
+    for(j=-1;j<1;j+=0.1){
+        x=0;
+        y=0;
+        q=0;
+        while(q < 15 && (x*x + y*y) < 4){
+            xt=x*x-y*y+i;
+            y=2*x*y+j;
+            x=xt;
+            q+=1;
+        }
+        if(x*x+y*y<4) { 
+            print "#"; 
+        } else {
+            print "+";
+        }
+    }
+    print "\n";
+}
