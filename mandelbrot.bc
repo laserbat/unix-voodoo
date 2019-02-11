@@ -1,4 +1,4 @@
-#!/usr/bin/bc
+#!/usr/bin/bc -q
 scale=16;
 
 for (i=-2.5;i<1;i+=0.1){
@@ -20,3 +20,5 @@ for (i=-2.5;i<1;i+=0.1){
     }
     print "\n";
 }
+
+halt;
