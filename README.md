@@ -85,16 +85,7 @@ Implementation of rule110 1D cellular automata, which is turing complete. Basica
 cyclic-tag.sed
 ---
 
-Implementation of a cyclic tag system in sed. Possibly the simplest proof of sed being turing complete. It uses a single `s///` substitution applied in a loop.
-
-It takes the initial word and production rules as an input, separated by '!'. After the last word, input must end with the following string `!1:P1!0:` with `P1` replaced with the first production word.  
-
-The system halts when all symbols of initial word have been used up. 
-
-Running an [example cyclic-tag system from wikipedia](https://en.wikipedia.org/wiki/Tag_system#Cyclic_tag_systems) with this code looks like this:
-
-    > echo '11001!010!000!1111!1:010!0:' | ./cyclic-tag.sed | head
-
+Moved to [https://github.com/laserbat/tag.sed](tag.sed)
 
 cp.sh
 ---
