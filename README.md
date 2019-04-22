@@ -85,7 +85,7 @@ Implementation of rule110 1D cellular automata, which is turing complete. Basica
 cyclic-tag.sed
 ---
 
-Moved to [https://github.com/laserbat/tag.sed](tag.sed)
+Moved to [tag.sed](https://github.com/laserbat/tag.sed)
 
 cp.sh
 ---
